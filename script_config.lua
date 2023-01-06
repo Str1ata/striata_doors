@@ -2,10 +2,12 @@ table.insert(Config.scriptsConfig, {
 
     doorsConfig = {
 
-		-- Este sistema de portas/portões funciona com o taget ultize o evento ["striata:doorsChange"] e ["striata:gatesChange"] para abrir/fechar as portas/portões.
-
+		baseType = "zirix", -- zirix, creative
 		commandPermission = { "owner.permissao","admin.permissao" },  -- Defina as permissoes que terão acesso ao comando (/keymaster)
 
+		targetMode = true,  --  Habilita o opções de target nas portas e portões.
+		doorsTargetDistance = 2.50,  -- Distancia maxima para intaragir nas portas com target.
+		gatesTargetDistance = 8.50,  -- Distancia maxima para intaragir nos portões com target.
 		doorsKeyMode = false,  --  Habilita Abertura e fechamentos de portas com tecla.
 		gatesKeyMode = true,  --  Habilita Abertura e fechamentos de portões com tecla.
 		gatesKeyOnlyInVehicle = true,  -- Ative esta opção para que possa ser aberto portoes com tecla somente dentro de veiculos. ("gatesKeyMode" deve estar ativo para funcionar!)
@@ -24,6 +26,7 @@ table.insert(Config.scriptsConfig, {
 		doorList = {  --  Lista de portas
 		--{	--------------------------------[ DELEGACIA VESPUCCI ]--------------------------------
 			{
+				name = "Door Vesp 1",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = 30,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -44,6 +47,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 2",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -64,6 +68,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 3",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -84,6 +89,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 4",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -104,6 +110,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 5",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -124,6 +131,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 6",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -144,6 +152,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 7",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -164,6 +173,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 8",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -184,6 +194,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 9",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -204,6 +215,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 10",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -220,6 +232,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 11",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -236,6 +249,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 12",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -252,6 +266,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 13",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -268,6 +283,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 14",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -284,6 +300,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 15",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -300,6 +317,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 16",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -316,6 +334,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 17",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -332,6 +351,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 18",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -348,6 +368,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 19",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -364,6 +385,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 20",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -380,6 +402,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 21",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -396,6 +419,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 22",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -412,6 +436,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 23",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -428,6 +453,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 24",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -444,6 +470,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 25",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -460,6 +487,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 26",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -476,6 +504,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 27",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -492,6 +521,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 28",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -508,6 +538,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 29",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -524,6 +555,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 30",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -540,6 +572,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 31",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -556,6 +589,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 32",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -572,6 +606,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 33",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -588,6 +623,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 34",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -604,6 +640,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 35",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -620,6 +657,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Door Vesp 36",
 				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -640,6 +678,7 @@ table.insert(Config.scriptsConfig, {
 		--{	--<==============================[ GATES ]==============================>-- --}
 		--{	--------------------------------[ DELEGACIA VESPUCCI ]--------------------------------
 			{
+				name = "Gate Vesp 1",
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = 60,  -- Defina aqui um tempo (em segundos) para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -660,6 +699,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Gate Vesp 2",
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -676,6 +716,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "Gate Vesp 3",
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -713,14 +754,19 @@ table.insert(Config.scriptsConfig, {
 			door = "porta",
 			gate = "portao",
 			keymaster = "chavemestre",
-			doorsforcesync = "sincronizarportas",
+			doorsforcesync = "sincronizarportas"
 
 		},
 
 		notifys = {
 			keyMasterEnable = "Agora você pode abrir qualquer porta!",
-			keyMasterDisable = "Agora será necessária permissão para abrir portas!",
+			keyMasterDisable = "Agora será necessária permissão para abrir portas!"
 		},
+
+		target = {
+			openOrCloseDoors = ": Abrir/Fechar Porta",
+			openOrCloseGates = ": Abrir/Fechar Portão"
+		}
 
 	},
 
@@ -729,14 +775,19 @@ table.insert(Config.scriptsConfig, {
 			door = "door",
 			gate = "gate",
 			keymaster = "keymaster",
-			doorsforcesync = "doorsforcesync",
+			doorsforcesync = "doorsforcesync"
 			
 		},
 
 		notifys = {
 			keyMasterEnable = "Now you can open any door!",
-			keyMasterDisable = "Now it will be necessary permission to open doors!",
+			keyMasterDisable = "Now it will be necessary permission to open doors!"
 		},
+
+		target = {
+			openOrCloseDoors = ": Open/Close Door",
+			openOrCloseGates = ": Open/Close Gate"
+		}
 	}
 })
 
