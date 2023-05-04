@@ -1,16 +1,19 @@
 table.insert(Config.scriptsConfig, {
 
     doorsConfig = {
-
-		baseType = "zirix", -- zirix, creative
 		commandPermission = { "owner.permissao","admin.permissao" },  -- Defina as permissoes que terão acesso ao comando (/keymaster)
+		breakPermission = { "owner.permissao","admin.permissao" },  -- Defina as permissoes que terão acesso ao comando (/arrombar)
+
+		breakAnim = {{"missheistfbi3b_ig7","lift_fibagent_loop"}},  -- Animações para arrombamento!
+		openDoorAnim = {{"veh@mower@base","start_engine"}},  -- Animações para abrir porta
+		openGateAnim = {{"anim@mp_player_intmenu@key_fob@","fob_click"}},  -- Animações para abrir portões
 
 		targetMode = true,  --  Habilita o opções de target nas portas e portões.
 		doorsTargetDistance = 2.50,  -- Distancia maxima para intaragir nas portas com target.
 		gatesTargetDistance = 8.50,  -- Distancia maxima para intaragir nos portões com target.
 		doorsKeyMode = false,  --  Habilita Abertura e fechamentos de portas com tecla.
 		gatesKeyMode = true,  --  Habilita Abertura e fechamentos de portões com tecla.
-		gatesKeyOnlyInVehicle = true,  -- Ative esta opção para que possa ser aberto portoes com tecla somente dentro de veiculos. ("gatesKeyMode" deve estar ativo para funcionar!)
+		gatesKeyOnlyInVehicle = true,  -- Ative esta opção para que possa ser aberto portões com tecla somente dentro de veiculos. ("gatesKeyMode" deve estar ativo para funcionar!)
 		doorsKey = "E",  --  Tecla para abrir portas.
 		gatesKey = "E",  --  Tecla para abrir portões.
 
@@ -24,661 +27,51 @@ table.insert(Config.scriptsConfig, {
 		gatesMenssage = true,  --  Habilita mensagens nos portões: "Aberto", "fechado". (OPÇÃO HABILITA 1 THREAD)
 
 		doorList = {  --  Lista de portas
-		--{	--------------------------------[ DELEGACIA VESPUCCI ]--------------------------------
-			{
-				name = "Door Vesp 1",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = 30,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1098.79,-832.8,4.89),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1097.99,-833.69,4.89),
-					},
 
+		--{	--<==============================[ DOORS ]==============================>-- --}
+
+		--{	--------------------------------[ LS PD ]--------------------------------
+			{
+				maxDistance = 2.5,
+				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
+				locked = true,
+				mensage = true,  -- Defina se aparecera o status da tranca.
+				doors = {
+					{
+						objHash = 185711165,
+						objCoords = vector3(445.37,-989.77,30.68),
+					},
+					{
+						objHash = 185711165,
+						objCoords = vector3(444.07,-989.77,30.68),
+					},
 				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
+				perm = {
 					"policia.permissao"
 				}
 			},
 			{
-				name = "Door Vesp 2",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
+				maxDistance = 2.5,
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
+				locked = true,
 				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1058.2,-840.35,5.11),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1057.12,-839.3,5.11),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 3",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1064.87,-828.62,5.48),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1065.77,-827.67,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 4",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1089.9,-848.18,4.89),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1090.73,-847.18,4.89),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 5",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1085.5,-811.92,5.48),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1086.22,-811.09,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 6",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1101.5,-846.66,13.69),
-					},
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1102.34,-847.3,13.69),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 7",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1091.65,-818.09,19.04),
-					},
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1092.38,-818.73,19.04),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 8",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1098.27,-836.06,19.01),
-					},
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1098.84,-835.26,19.01),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 9",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1095.16,-844.05,19.01),
-					},
-					{
-						objHash = -1255368438,
-						objCoords = vector3(-1094.26,-844.76,19.01),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 10",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
+				doors = {
 					{
 						objHash = 631614199,
-						objCoords = vector3(-1072.86,-827.52,5.48),
+						objCoords = vector3(461.86,-993.68,24.91),
 					},
 
 				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 11",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1078.4,-814.46,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 12",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1081.31,-816.62,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 13",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1096.44,-820.05,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 14",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1091.07,-821.16,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 15",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1094.04,-823.26,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 16",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1088.57,-824.16,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 17",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1086.24,-827.29,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 18",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1089.2,-829.69,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 19",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1087.23,-829.47,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 20",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1092.51,-842.49,4.89),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 21",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.18,-841.28,10.29),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 22",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.11,-841.4,14.37),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 23",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.19,-841.45,18.36),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 24",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.13,-841.38,22.37),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 25",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.17,-841.44,26.36),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 26",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.41,-841.59,30.36),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 27",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1091.19,-841.48,34.37),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 28",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1090.09,-840.99,37.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 29",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1079.5,-855.51,5.21),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 30",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 631614199,
-						objCoords = vector3(-1091.67,-826.67,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 31",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1071.24,-833.45,5.48),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 32",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1077.22,-830.21,11.04),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 33",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1077.15,-830.22,15.04),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 34",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1077.09,-830.17,19.04),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 35",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -147325430,
-						objCoords = vector3(-1077.1,-830.2,27.04),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Door Vesp 36",
-				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez so! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = -2023754432,
-						objCoords = vector3(-1108.34,-842.11,13.69),
-					},
-
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
+				perm = {
 					"policia.permissao"
 				}
 			},
 		--}
 
 		--{	--<==============================[ GATES ]==============================>-- --}
+
 		--{	--------------------------------[ DELEGACIA VESPUCCI ]--------------------------------
 			{
-				name = "Gate Vesp 1",
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = 60,  -- Defina aqui um tempo (em segundos) para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -699,7 +92,6 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
-				name = "Gate Vesp 2",
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -709,23 +101,6 @@ table.insert(Config.scriptsConfig, {
 					{
 						objHash = 1828187002,
 						objCoords = vector3(-1073.29,-851.05,4.97),
-					},
-				},
-				perm = {  -- Defina as permissões que poderão abrir as portas\portões
-					"policia.permissao"
-				}
-			},
-			{
-				name = "Gate Vesp 3",
-				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
-				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
-				isGate = true,  -- Defina como true se for um portão.
-				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez só! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
-					{
-						objHash = 1828187002,
-						objCoords = vector3(-1119.18,-838.64,13.42),
 					},
 				},
 				perm = {  -- Defina as permissões que poderão abrir as portas\portões
@@ -754,13 +129,19 @@ table.insert(Config.scriptsConfig, {
 			door = "porta",
 			gate = "portao",
 			keymaster = "chavemestre",
+			breakLock = "arrombar",
 			doorsforcesync = "sincronizarportas"
 
 		},
 
+		itens = {
+            breakInto = "lockpick",
+		},
+
 		notifys = {
 			keyMasterEnable = "Agora você pode abrir qualquer porta!",
-			keyMasterDisable = "Agora será necessária permissão para abrir portas!"
+			keyMasterDisable = "Agora será necessária permissão para abrir portas!",
+			notToBreakInto = "Você não possui as ferramentas necessarias!"
 		},
 
 		target = {
@@ -775,13 +156,19 @@ table.insert(Config.scriptsConfig, {
 			door = "door",
 			gate = "gate",
 			keymaster = "keymaster",
+			breakLock = "batter",
 			doorsforcesync = "doorsforcesync"
 			
 		},
 
+		itens = {
+            breakInto = "lockpick",
+		},
+
 		notifys = {
 			keyMasterEnable = "Now you can open any door!",
-			keyMasterDisable = "Now it will be necessary permission to open doors!"
+			keyMasterDisable = "Now it will be necessary permission to open doors!",
+			notToBreakInto = "You don't have the tools you need!"
 		},
 
 		target = {
