@@ -32,11 +32,12 @@ table.insert(Config.scriptsConfig, {
 
 		--{	--------------------------------[ LS PD ]--------------------------------
 			{
-				maxDistance = 2.5,
+				name = "LS-PD door staircase",  -- Defina o nome da porta/portão
+				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,
+				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
 				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {
+				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez só! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
 					{
 						objHash = 185711165,
 						objCoords = vector3(445.37,-989.77,30.68),
@@ -46,23 +47,24 @@ table.insert(Config.scriptsConfig, {
 						objCoords = vector3(444.07,-989.77,30.68),
 					},
 				},
-				perm = {
+				perm = {  -- Defina as permissões que poderão abrir as portas\portões
 					"policia.permissao"
 				}
 			},
 			{
-				maxDistance = 2.5,
+				name = "LS-PD jail 1",  -- Defina o nome da porta/portão
+				maxDistance = 2.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
-				locked = true,
+				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
 				mensage = true,  -- Defina se aparecera o status da tranca.
-				doors = {
+				doors = {  -- Defina um conjunto de portas/portões. (Isso serve para alterar o status do conjunto de uma vez só! EX: caso tenha uma porta dupla ao fechar as duas fecharão.)
 					{
 						objHash = 631614199,
 						objCoords = vector3(461.86,-993.68,24.91),
 					},
 
 				},
-				perm = {
+				perm = {  -- Defina as permissões que poderão abrir as portas\portões
 					"policia.permissao"
 				}
 			},
@@ -72,6 +74,7 @@ table.insert(Config.scriptsConfig, {
 
 		--{	--------------------------------[ DELEGACIA VESPUCCI ]--------------------------------
 			{
+				name = "VESPUCCI gate",  -- Defina o nome da porta/portão
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = 60,  -- Defina aqui um tempo (em segundos) para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
@@ -92,6 +95,7 @@ table.insert(Config.scriptsConfig, {
 				}
 			},
 			{
+				name = "VESPUCCI garage",  -- Defina o nome da porta/portão
 				maxDistance = 8.5,  -- Defina a distância que será possível abrir a porta/portão.
 				timer = nil,  -- Defina aqui um tempo para a porta/portão se fechar automaticamente. (Coloque nil para sem temporizador.)
 				locked = true,  -- Defina se a porta/portão irá vir trancada quando o script iniciar.
