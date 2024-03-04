@@ -1,0 +1,157 @@
+{
+    "doorsConfig": {
+        "commandPermission": [
+            "owner.permissao",
+            "admin.permissao"
+        ],
+        "breakPermission": [
+            "owner.permissao",
+            "admin.permissao"
+        ],
+        "breakAnim": [
+            [
+                "missheistfbi3b_ig7",
+                "lift_fibagent_loop"
+            ]
+        ],
+        "openDoorAnim": [
+            [
+                "veh@mower@base",
+                "start_engine"
+            ]
+        ],
+        "openGateAnim": [
+            [
+                "anim@mp_player_intmenu@key_fob@",
+                "fob_click"
+            ]
+        ],
+        "targetMode": true,
+        "doorsTargetDistance": 2.50,
+        "gatesTargetDistance": 8.50,
+        "doorsKeyMode": false,
+        "gatesKeyMode": true,
+        "gatesKeyOnlyInVehicle": true,
+        "doorsKey": "E",
+        "gatesKey": "E",
+        "doorsKeyCFGMenssage": "Abrir/Fechar Portas",
+        "gatesKeyCFGMenssage": "Abrir/Fechar Portões",
+        "doorsForceClose": false,
+        "gatesForceClose": false,
+        "doorsMenssage": true,
+        "gatesMenssage": true,
+        "doorList": [
+            {
+                "name": "LS-PD door staircase",
+                "maxDistance": 2.5,
+                "timer": null,
+                "locked": true,
+                "mensage": true,
+                "doors": [
+                    {
+                        "objHash": 185711165,
+                        "objCoords": [
+                            445.37,
+                            -989.77,
+                            30.68
+                        ]
+                    },
+                    {
+                        "objHash": 185711165,
+                        "objCoords": [
+                            444.07,
+                            -989.77,
+                            30.68
+                        ]
+                    }
+                ],
+                "perm": [
+                    "policia.permissao"
+                ]
+            },
+            {
+                "name": "LS-PD jail 1",
+                "maxDistance": 2.5,
+                "timer": null,
+                "locked": true,
+                "mensage": true,
+                "doors": [
+                    {
+                        "objHash": 631614199,
+                        "objCoords": [
+                            461.86,
+                            -993.68,
+                            24.91
+                        ]
+                    }
+                ],
+                "perm": [
+                    "policia.permissao"
+                ]
+            },
+            {
+                "name": "LS-PD gate 1",
+                "maxDistance": 8.5,
+                "timer": 60,
+                "locked": true,
+                "isGate": true,
+                "mensage": true,
+                "doors": [
+                    {
+                        "objHash": -1603817716,
+                        "objCoords": [
+                            488.85,
+                            -1017.62,
+                            28.22
+                        ]
+                    }
+                ],
+                "perm": [
+                    "policia.permissao"
+                ]
+            }
+        ]
+    },
+    "doorsLanguagePTBR": {
+        "commands": {
+            "door": "porta",
+            "gate": "portao",
+            "keymaster": "chavemestre",
+            "breakLock": "arrombar",
+            "doorsforcesync": "sincronizarportas"
+        },
+        "itens": {
+            "breakInto": "lockpick"
+        },
+        "notifys": {
+            "keyMasterEnable": "Agora você pode abrir qualquer porta!",
+            "keyMasterDisable": "Agora será necessária permissão para abrir portas!",
+            "notToBreakInto": "Você não possui as ferramentas necessarias!"
+        },
+        "target": {
+            "openOrCloseDoors": ": Abrir/Fechar Porta",
+            "openOrCloseGates": ": Abrir/Fechar Portão"
+        }
+    },
+    "doorsLanguageENUS": {
+        "commands": {
+            "door": "door",
+            "gate": "gate",
+            "keymaster": "keymaster",
+            "breakLock": "batter",
+            "doorsforcesync": "doorsforcesync"
+        },
+        "itens": {
+            "breakInto": "lockpick"
+        },
+        "notifys": {
+            "keyMasterEnable": "Now you can open any door!",
+            "keyMasterDisable": "Now it will be necessary permission to open doors!",
+            "notToBreakInto": "You don't have the tools you need!"
+        },
+        "target": {
+            "openOrCloseDoors": ": Open/Close Door",
+            "openOrCloseGates": ": Open/Close Gate"
+        }
+    }
+}
