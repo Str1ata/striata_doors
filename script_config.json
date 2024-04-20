@@ -1,5 +1,5 @@
 {
-    "doorsConfig": {
+    "scriptConfig": {
         "commandPermission": [
             "owner.permissao",
             "admin.permissao"
@@ -112,7 +112,7 @@
             }
         ]
     },
-    "doorsLanguagePTBR": {
+    "languagePTBR": {
         "commands": {
             "door": "porta",
             "gate": "portao",
@@ -133,7 +133,7 @@
             "openOrCloseGates": ": Abrir/Fechar Portão"
         }
     },
-    "doorsLanguageENUS": {
+    "languageENUS": {
         "commands": {
             "door": "door",
             "gate": "gate",
