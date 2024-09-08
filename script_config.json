@@ -36,6 +36,8 @@
         "gatesFivemKey": "E",
         "doorsRedmKey": "0x760A9C6F",
         "gatesRedmKey": "0x760A9C6F",
+        "openMessage": "Aberto",
+        "closeMessage": "Fechado",
         "doorsKeyCFGMenssage": "Abrir/Fechar Portas",
         "gatesKeyCFGMenssage": "Abrir/Fechar Portões",
         "doorsForceClose": false,
