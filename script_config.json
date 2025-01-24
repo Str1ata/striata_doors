@@ -8,113 +8,224 @@
             "owner.permissao",
             "admin.permissao"
         ],
-        "breakAnim": [
-            [
-                "missheistfbi3b_ig7",
-                "lift_fibagent_loop"
+        "breakAnim": {
+            "fivem": [
+                [
+                    "missheistfbi3b_ig7",
+                    "lift_fibagent_loop"
+                ]
+            ],
+            "redm": [
+                [
+                    "script_story@mud5@ig@ig_3_player_hit_teller",
+                    "unlock_scared01_u_m_m_valbankmanager_01"
+                ]
             ]
-        ],
-        "openDoorAnim": [
-            [
-                "veh@mower@base",
-                "start_engine"
+        },
+        "openDoorAnim": {
+            "fivem": [
+                [
+                    "veh@mower@base",
+                    "start_engine"
+                ]
+            ],
+            "redm": [
+                [
+                    "script_common@jail_cell@unlock@key",
+                    "action"
+                ]
             ]
-        ],
-        "openGateAnim": [
-            [
-                "anim@mp_player_intmenu@key_fob@",
-                "fob_click"
+        },
+        "openGateAnim": {
+            "fivem": [
+                [
+                    "anim@mp_player_intmenu@key_fob@",
+                    "fob_click"
+                ]
+            ],
+            "redm": [
+                [
+                    "script_common@jail_cell@unlock@key",
+                    "action"
+                ]
             ]
-        ],
+        },
+
         "targetMode": true,
         "doorsTargetDistance": 2.50,
         "gatesTargetDistance": 8.50,
         "doorsKeyMode": false,
         "gatesKeyMode": true,
         "gatesKeyOnlyInVehicle": true,
-        "doorsFivemKey": "E",
-        "gatesFivemKey": "E",
-        "doorsRedmKey": "0x760A9C6F",
-        "gatesRedmKey": "0x760A9C6F",
-        "openMessage": "Aberto",
-        "closeMessage": "Fechado",
-        "doorsKeyCFGMenssage": "Abrir/Fechar Portas",
-        "gatesKeyCFGMenssage": "Abrir/Fechar Portões",
+        "keyPressInteraction": {
+            "fivem": {
+                "doors": "E",
+                "gates": "E"
+            },
+            "redm": {
+                "doors": "0x760A9C6F",
+                "gates": "0x760A9C6F"
+            }
+        },
         "doorsForceClose": false,
         "gatesForceClose": false,
         "doorsMenssage": true,
         "gatesMenssage": true,
-        "doorList": [
-            {
-                "name": "LS-PD door staircase",
-                "maxDistance": 2.5,
-                "timer": null,
-                "locked": true,
-                "mensage": true,
-                "doors": [
-                    {
-                        "objHash": 185711165,
-                        "objCoords": [
-                            445.37,
-                            -989.77,
-                            30.68
-                        ]
-                    },
-                    {
-                        "objHash": 185711165,
-                        "objCoords": [
-                            444.07,
-                            -989.77,
-                            30.68
-                        ]
-                    }
-                ],
-                "perm": [
-                    "policia.permissao"
-                ]
-            },
-            {
-                "name": "LS-PD jail 1",
-                "maxDistance": 2.5,
-                "timer": null,
-                "locked": true,
-                "mensage": true,
-                "doors": [
-                    {
-                        "objHash": 631614199,
-                        "objCoords": [
-                            461.86,
-                            -993.68,
-                            24.91
-                        ]
-                    }
-                ],
-                "perm": [
-                    "policia.permissao"
-                ]
-            },
-            {
-                "name": "LS-PD gate 1",
-                "maxDistance": 8.5,
-                "timer": 60,
-                "locked": true,
-                "isGate": true,
-                "mensage": true,
-                "doors": [
-                    {
-                        "objHash": -1603817716,
-                        "objCoords": [
-                            488.85,
-                            -1017.62,
-                            28.22
-                        ]
-                    }
-                ],
-                "perm": [
-                    "policia.permissao"
-                ]
-            }
-        ]
+        "doorList": {
+            "fivem": [
+                {
+                    "name": "LS-PD door staircase",
+                    "maxDistance": 2.5,
+                    "timer": 0.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 185711165,
+                            "objCoords": [445.37, -989.77, 30.68]
+                        },
+                        {
+                            "objHash": 185711165,
+                            "objCoords": [444.07, -989.77, 30.68]
+                        }
+                    ],
+                    "perm": [
+                        "policia.permissao"
+                    ]
+                },
+                {
+                    "name": "LS-PD jail 1",
+                    "maxDistance": 2.5,
+                    "timer": 0.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 631614199,
+                            "objCoords": [461.86, -993.68, 24.91]
+                        }
+                    ],
+                    "perm": [
+                        "policia.permissao"
+                    ]
+                },
+                {
+                    "name": "LS-PD gate 1",
+                    "maxDistance": 8.5,
+                    "timer": 60,
+                    "locked": true,
+                    "isGate": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": -1603817716,
+                            "objCoords": [488.85, -1017.62, 28.22]
+                        }
+                    ],
+                    "perm": [
+                        "policia.permissao"
+                    ]
+                }
+            ],
+            "redm": [
+                {
+                    "name": "Valentine sheriffs office 1",
+                    "maxDistance": 2.5,
+                    "timer": 0.0,
+                    "locked": false,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 1988748538,
+                            "objCoords": [-276.01,802.6,119.42]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                },
+                {
+                    "name": "Valentine sheriffs office 2",
+                    "maxDistance": 2.5,
+                    "timer": 0.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 395506985,
+                            "objCoords": [-275.85,812.12,119.42]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                },
+                {
+                    "name": "Valentine sheriffs office 3",
+                    "maxDistance": 2.5,
+                    "timer": 0.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 1508776842,
+                            "objCoords": [-270.76,810.03,119.4]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                },
+                {
+                    "name": "Valentine sheriffs office jail 1",
+                    "maxDistance": 2.5,
+                    "timer": 3.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 535323366,
+                            "objCoords": [-275.02,809.28,119.37]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                },
+                {
+                    "name": "Valentine sheriffs office jail 2",
+                    "maxDistance": 2.5,
+                    "timer": 3.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 295355979,
+                            "objCoords": [-273.46,809.97,119.37]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                },
+                {
+                    "name": "Valentine sheriffs office jail 3",
+                    "maxDistance": 2.5,
+                    "timer": 3.0,
+                    "locked": true,
+                    "mensage": true,
+                    "doors": [
+                        {
+                            "objHash": 193903155,
+                            "objCoords": [-272.05,808.26,119.37]
+                        }
+                    ],
+                    "perm": [
+                        "police"
+                    ]
+                }
+            ]
+        }
     },
     "languagePTBR": {
         "commands": {
@@ -130,11 +241,25 @@
         "notifys": {
             "keyMasterEnable": "Agora você pode abrir qualquer porta!",
             "keyMasterDisable": "Agora será necessária permissão para abrir portas!",
-            "notToBreakInto": "Você não possui as ferramentas necessarias!"
+            "notToBreakInto": "Você não possui as ferramentas necessárias!"
         },
         "target": {
             "openOrCloseDoors": ": Abrir/Fechar Porta",
             "openOrCloseGates": ": Abrir/Fechar Portão"
+        },
+        "drawText": {
+            "fivem": {
+                "open": "🔓",
+                "closed": "🔒"
+            },
+            "redm": {
+                "open": "~o~Aberto~q~",
+                "closed": "~e~Fechado~q~"
+            }
+        },
+        "gameConfiguration": {
+            "doorsInteraction": "Abrir/Fechar Portas",
+            "gatesInteraction": "Abrir/Fechar Portões"
         }
     },
     "languageENUS": {
@@ -156,6 +281,20 @@
         "target": {
             "openOrCloseDoors": ": Open/Close Door",
             "openOrCloseGates": ": Open/Close Gate"
+        },
+        "drawText": {
+            "fivem": {
+                "open": "🔓",
+                "closed": "🔒"
+            },
+            "redm": {
+                "open": "open",
+                "closed": "closed"
+            }
+        },
+        "gameConfiguration": {
+            "doorsInteraction": "Open/Close Doors",
+            "gatesInteraction": "Open/Close Gates"
         }
     }
 }
