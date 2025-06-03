@@ -78,6 +78,7 @@
                     "maxDistance": 2.5,
                     "timer": 0.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -98,6 +99,7 @@
                     "maxDistance": 2.5,
                     "timer": 0.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -149,6 +151,7 @@
                     "maxDistance": 2.5,
                     "timer": 0.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -165,6 +168,7 @@
                     "maxDistance": 2.5,
                     "timer": 0.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -181,6 +185,7 @@
                     "maxDistance": 2.5,
                     "timer": 3.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -197,6 +202,7 @@
                     "maxDistance": 2.5,
                     "timer": 3.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -213,6 +219,7 @@
                     "maxDistance": 2.5,
                     "timer": 3.0,
                     "locked": true,
+                    "isGate": false,
                     "mensage": true,
                     "doors": [
                         {
