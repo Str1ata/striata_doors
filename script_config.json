@@ -79,6 +79,7 @@
                     "timer": 0.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -100,6 +101,7 @@
                     "timer": 0.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -117,6 +119,7 @@
                     "timer": 60,
                     "locked": true,
                     "isGate": true,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -135,6 +138,8 @@
                     "maxDistance": 2.5,
                     "timer": 0.0,
                     "locked": false,
+                    "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -152,6 +157,7 @@
                     "timer": 0.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -169,6 +175,7 @@
                     "timer": 0.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -186,6 +193,7 @@
                     "timer": 3.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -203,6 +211,7 @@
                     "timer": 3.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
@@ -220,6 +229,7 @@
                     "timer": 3.0,
                     "locked": true,
                     "isGate": false,
+                    "isHome": false,
                     "mensage": true,
                     "doors": [
                         {
